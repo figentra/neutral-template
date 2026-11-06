@@ -1,0 +1,19 @@
+# Stackra file contract:
+# Purpose: every tool this repository runs, pinned (Stackra ADR 0027): the same versions locally, in the
+#          hooks and in CI. A repository that adds a workspace or deploys adds its tools here.
+# Boundary: tool pins only; no tasks and no environment.
+# Runtime: none
+# Governing contract: Stackra ADR 0027 (CLI tools pinned in mise), Stackra ADR 0528 (the neutral template)
+
+[tools]
+node = "24.22.0"
+pnpm = "12.16.1"
+# Formatting and spelling for Markdown, YAML and JSON (.oxfmtrc.jsonc, cspell.config.yaml).
+"npm:oxfmt" = "0.71.0"
+"npm:cspell" = "10.4.0"
+# Secret scanner for the pre-commit hook and the CI gate (.gitleaks.toml).
+gitleaks = "8.30.1"
+# GitHub workflow lint in the CI gate.
+"aqua:rhysd/actionlint" = "1.7.12"
+# Known vulnerabilities in a lockfile, once the repository has one (Stackra ADR 0174).
+"aqua:google/osv-scanner" = "2.7.0"
