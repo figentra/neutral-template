@@ -1,0 +1,11 @@
+# Stackra file contract:
+# Purpose: line endings and how GitHub shows generated files.
+# Boundary: attributes only.
+# Runtime: none
+# Governing contract: Stackra ADR 0528 (the neutral template)
+
+* text=auto eol=lf
+
+# Rendered by `fflow sync` and digest-locked in .flow/lock.json: folded in diffs and statistics.
+.flow/lock.json linguist-generated -diff
+.agents/** linguist-generated

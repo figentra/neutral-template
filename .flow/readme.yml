@@ -1,0 +1,38 @@
+# The README's data: `fflow sync` renders README.md from this file through the preset's readme template.
+# Edit here, never README.md.
+# Stackra file contract:
+# Purpose: the data the root README.md is rendered from: name, tagline, status and the short sections.
+# Boundary: front-page content only; longer docs live in docs/.
+# Runtime: none (read by fflow)
+# Governing contract: Stackra ADR 0528 (the neutral template)
+name: Neutral template
+repo: figentra/neutral-template
+tagline: "The layout every non-product Figentra repository starts from (Flow's neutral preset)."
+status: In progress
+statusNote: "the first layout, from the repo standards of 2026-11-06."
+docs: https://docs.stackra.figentra.com/adr/0528-neutral-and-stackra-templates
+what: |
+  A repository template with no product code and no workspace: the agent setup Figentra Flow renders
+  (`.agents/`, `.claude/`, `AGENTS.md`, `CLAUDE.md`), the GitHub setup (code owners, the ruleset, issue
+  and pull request forms, the Quality Gate), the pinned toolchain (`mise.toml`), git hooks
+  (`lefthook.yml`), formatting, spelling, secret scanning, Renovate and the security policy.
+
+  Infrastructure, the testbed, Flow and brand start from it. A Stackra product starts from
+  [figentra/stackra-template](https://github.com/figentra/stackra-template) instead, which is this
+  layout plus a Stackra workspace (Stackra ADR 0528).
+quickstart: |
+  ```bash
+  gh repo create figentra/<name> --template figentra/neutral-template --private
+  mise install
+  fflow sync
+  ```
+
+  Then add what the repository needs (a workspace, members, `tools/`) and declare any extra root entry
+  in package.json `stackra.layout.allow`, with the reason (Stackra ADR 0526).
+architecture: |
+  | Path                         | What it holds                                                        |
+  | ---------------------------- | -------------------------------------------------------------------- |
+  | `docs/`                      | the repository's own docs (Stackra ADR 0526 decision 2)               |
+  | `flow.config.json`, `.flow/` | Figentra Flow's preset and README data; `fflow sync` renders the rest |
+  | `.github/`                   | code owners, the ruleset, forms and the Quality Gate                  |
+  | `mise.toml`, `lefthook.yml`  | the pinned tools and the git hooks                                    |
