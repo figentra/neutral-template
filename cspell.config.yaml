@@ -22,6 +22,8 @@ ignorePaths:
   - lefthook.yml
   - opencode.jsonc
   - .flow/lock.json
+  # this file lists the forbidden words, so it would flag itself
+  - cspell.config.yaml
   - "**/node_modules/**"
 words:
   # the shell keyword, in workflow scripts
@@ -29,17 +31,23 @@ words:
   - actionlint
   - automerge
   - commitlint
+  - commitlintrc
+  - docblocks
   - fflow
   - Figentra
   - gitleaks
   - lefthook
   - linguist
+  - nodenv
+  - opencode
   - oxfmt
   - oxlint
   - renovatebot
+  - rhysd
   - sops
   - Stackra
   - Testbed
+  - worktrees
 flagWords:
   - figentra-flow
   - figentra_flow
