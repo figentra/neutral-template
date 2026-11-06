@@ -1,0 +1,37 @@
+{
+  "lockVersion": 2,
+  "flow": "0.6.4",
+  "preset": {
+    "name": "neutral",
+    "version": "0.6.4",
+    "digest": "sha256:52fd8c9e40349ef007e0bfe0d499945cf73e7fca9c2ff525af930044465673e1"
+  },
+  "profile": "default",
+  "overrides": "",
+  "files": {
+    ".agents/skills/flow-specify/SKILL.md": "sha256:d4d72bfe6265c1d5b61c0b33833466294361df1712f915354037f0d6a2a5a6e4",
+    ".agents/skills/flow-clarify/SKILL.md": "sha256:afdf2490ef99120278dce9c52867d176139928ab4be7bab053c0a372fbe77514",
+    ".agents/skills/flow-plan/SKILL.md": "sha256:316b3b8228e8563c18b6c33029c28a12a97bc99a30ca0736f00be7eda9078f96",
+    ".agents/skills/flow-analyze/SKILL.md": "sha256:9775d91d35e0af88a8db6e902fff9de9aafa4509d17127c129984f011a7e5101",
+    ".agents/skills/flow-checklist/SKILL.md": "sha256:581fccfdef132071a70d1aeb9fe0c5cdd8bd4efaf47bab3138bb9d2c160f3898",
+    ".agents/skills/flow-implement/SKILL.md": "sha256:74fc6ccd1e0e5a928c626482eb04beac3fc94d75ae203c172029bfe3d96e6e08",
+    ".agents/skills/flow-build/SKILL.md": "sha256:e030c551e1e25b08632675faf4962078a4e06bab0101f5a4d6c963959bf7ce6e",
+    ".agents/skills/flow-converge/SKILL.md": "sha256:738eb1c7080038672e1f70240311fb0f2fabf7452174d15a7cb383b9bf3e6441",
+    ".agents/skills/flow-gate/SKILL.md": "sha256:181a92decd8f767725fa1b0b463cd282afc70f91b011b47e298b1e4c61579885",
+    ".agents/skills/flow-review/SKILL.md": "sha256:df7f63a49fb045d3b5fcde7b0126a4c05d28a53352f592b3daab160410235bbe",
+    ".agents/agents/ci-steward.md": "sha256:ceb0472f11719d087ef2409c9d1682ee7915376652eeddcbacb6b43ee32ab3d5",
+    ".agents/agents/git-steward.md": "sha256:7fe06aef8fa93f400ac832807e8d7e245c485bb25dc7df5780203af0b52443cb",
+    ".agents/agents/tracker-steward.md": "sha256:e6b963e85919069f2fd10e3f3dd902c66798f9bb7fbd7b67967740eb74cf6e80",
+    ".agents/rules/worktrees.md": "sha256:2d104999e7719b89b995313c1ac68d216536048d00004f1e1292de2bd53bf17b",
+    ".agents/hooks/fflow-guard.mjs": "sha256:a54228c3e7f1b3c592ec166e125a548d4b3feaddaf46d409ea52714df8987c76",
+    ".claude/settings.json": "sha256:17162cf509a469d4b3cb6c5d8c36ee75dfda3b0580a00012aa6ead9b1774ae26",
+    ".mcp.yaml": "sha256:c4bcd2374220a008f8e3cc3565a00ad5d831f612cc0bb2abc3eba5ca0a70d734",
+    "AGENTS.md": "sha256:627481136d7e7f60a939dbee0f74cf722f0495e8106156dedc54e2924b3379c7",
+    "CLAUDE.md": "sha256:3e5d4f85d31d58e0f1b6a145980efec8e3545828570114eaf629d7318b189221",
+    "lefthook.yml": "sha256:23d5a55aba0fa7a57bfe697fdabf312fc3904fe3b5657f81383cdbf407af5275",
+    "README.md": "sha256:d1ce3d7660c031dc53c85c53b64e1156934de0032cc449c0a7feecca04ee3cfd",
+    ".github/workflows/fflow-approve.yml": "sha256:7ec2a4679139a058b2f6750dd4ff93f9e8d6f59cf46e0c87bcfb1721b79685ad",
+    ".github/CODEOWNERS": "sha256:42617eb42394c93f78e7564e89149ddf06f44506ee978356b7ce3cfe0ff410a0"
+  },
+  "skills": {}
+}

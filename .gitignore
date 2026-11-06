@@ -1,0 +1,32 @@
+# Stackra file contract:
+# Purpose: what git never tracks in a neutral repository: OS and editor files, dependencies and builds
+#          a repository may add, local secrets and agent state.
+# Boundary: ignores only.
+# Runtime: none
+# Governing contract: Stackra ADR 0528 (the neutral template); ADR 0525 (no secret in a file)
+
+.DS_Store
+Thumbs.db
+*.swp
+*.log
+
+# Dependencies and builds, for a repository that adds a workspace.
+node_modules/
+.pnpm-store/
+dist/
+coverage/
+.turbo/
+
+# Local secrets and their decrypted copies never reach git.
+.env
+.env.*
+!.env.example
+.dev.vars
+*.pem
+*.key
+
+# Agent and tool state.
+.claude/worktrees/
+.claude/settings.local.json
+.mcp.json
+.flow/current.json
