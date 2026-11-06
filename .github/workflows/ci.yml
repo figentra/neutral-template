@@ -69,7 +69,7 @@ jobs:
 
       # Rendered files match .flow/lock.json, and the specs pass.
       - name: Flow gate
-        run: npx -y @figentra-oss/flow@0.6.4 gate ci
+        run: npx -y -p @figentra-oss/flow@0.6.4 fflow gate ci
 
       # planned (STA-2203): `stackra validate --repository` runs the layout check here once a released
       # @stackra/cli carries it and runs without a workspace.
