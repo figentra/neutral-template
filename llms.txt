@@ -1,0 +1,22 @@
+# neutral-template
+
+> The layout every non-product Figentra repository starts from: Figentra Flow's neutral preset, with agent setup, GitHub setup, pinned tools and hooks, and no product code.
+
+## Docs
+
+- [STATE.md](STATE.md): what is proven by a real run, what is only declared, and open risks (2026-11-07)
+- [README.md](README.md): front page and quick start
+- [AGENTS.md](AGENTS.md): agent rules (rendered by fflow; do not edit)
+- [docs/README.md](docs/README.md): the docs index for this repository
+- [CONTRIBUTING.md](CONTRIBUTING.md): how changes land and what the root may hold
+
+## Entry points
+
+- [flow.config.json](flow.config.json): the Flow preset; source of the rendered files
+- [.flow/readme.yml](.flow/readme.yml): the data README.md is rendered from
+- [mise.toml](mise.toml): pinned tools
+- [lefthook.yml](lefthook.yml): git hooks
+- [.github/workflows/ci.yml](.github/workflows/ci.yml): the Quality Gate
+- [.github/rulesets/main.json](.github/rulesets/main.json): the main branch ruleset
+- [.github/CODEOWNERS](.github/CODEOWNERS): code owners
+- [.agents/rules/worktrees.md](.agents/rules/worktrees.md): the worktree rule
